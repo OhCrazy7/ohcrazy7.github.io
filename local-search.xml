@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>在github上搭建一个Hexo博客，主题：Fluid</title>
+    <link href="/2021/01/30/hexo_blog_start/"/>
+    <url>/2021/01/30/hexo_blog_start/</url>
+    
+    <content type="html"><![CDATA[<p>More detail can be found at <a href="https://hexo.fluid-dev.com/docs/">Fluid</a></p><a id="more"></a><h1 id="Build-hexo-blog-at-local"><a href="#Build-hexo-blog-at-local" class="headerlink" title="Build hexo blog at local"></a>Build hexo blog at local</h1><p><strong>Attention</strong>:<br>The following instructions are pseudo code:</p><ol><li>install nodejs npm</li><li>npm install hexo-cli</li><li>hexo init <code>your-blog-dir</code></li><li>go to <code>path-to-your-blog-dir</code></li><li><code>npm install &amp;&amp; npm install hexo-theme-fluid</code> (make sure hexo’s version is over 5.0.0)</li><li>change the value <code>theme</code> in <code>_config.yml</code> to <code>fluid</code></li><li>cp <code>node_modules/hexo-theme-fluid/_config.yml</code> to current dir</li><li><code>hexo g &amp;&amp; hexo s</code>, here, ‘g’ means generate and ‘s’ means server</li></ol><h1 id="Get-a-github-page"><a href="#Get-a-github-page" class="headerlink" title="Get a github page"></a>Get a github page</h1><p>Just create a repository named <code>your_blog_name.github.io</code></p><h1 id="Push-to-github"><a href="#Push-to-github" class="headerlink" title="Push to github"></a>Push to github</h1><p>Search <code>deploy</code> in file <code>_config.yml</code>, and modify:</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">&#x27;git&#x27;</span><br>  <span class="hljs-attr">repo:</span><br>    <span class="hljs-attr">github:</span> <span class="hljs-string">https://github.com/your_user_name/your_blog_name.github.io</span><br>  <span class="hljs-attr">branch:</span> <span class="hljs-string">master</span><br></code></pre></td></tr></table></figure><p>and then <code>npm install hexo-deployer-git --save</code><br>finally <code>hexo deploy</code>, or simply <code>hexo d</code></p><p>Wait a minute. You your blog <code>your_blog_name.github.io</code> can be opened.</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  
+</search>
